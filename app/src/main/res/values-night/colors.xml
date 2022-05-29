@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_1">#FF3713</color>
+    <color name="red_2">#FF490A</color>
+    <color name="orange_1">#FF2623</color>
+    <color name="orange_2">#FF5D03</color>
+    <color name="black">#FF000000</color>
+    <color name="text_color">#FFFFFFFF</color>
+    <color name="light_stroke">#201724</color>    <color name="transparent">#0000ffff</color>
+    <color name="color_change">#201724</color>
+    <color name="color_change1">#A3B1C6</color>
+    <color name="dark_stroke">#444446</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

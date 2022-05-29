@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detection_page"
+    tools:context=".detection_page">
+
+
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back_btn"
+        android:id="@+id/back_btn_detection"
+        app:neumorph_shadowColorLight="@color/light_stroke"
+        app:neumorph_shadowColorDark="@color/dark_stroke"
+        android:elevation="20sp"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo_sample"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/plant_view"
+        android:contentDescription="@string/phone_number" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/take_photo_icon"
+        android:layout_below="@+id/plant_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/take_photo"
+        app:neumorph_shapeType="flat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/take_photo"
+        android:id="@+id/detected_text"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/acme"
+        android:text="@string/for_disease_detection_click_here"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detected_text"
+        android:textSize="30sp"
+        android:id="@+id/disease_name"
+        android:text="@string/solution1"
+        android:textColor="@color/orange_1"
+        android:visibility="gone"
+        android:fontFamily="@font/acme"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disease_name"
+        android:text="@string/for_treatment_advice"
+        android:padding="34dp"
+        android:visibility="gone"
+        android:textSize="24sp"
+
+        android:fontFamily="@font/acme"
+        android:layout_marginTop="50dp"
+        android:id="@+id/advice_text"
+        />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/solution_btn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="60dp"
+        android:text="@string/click_here"
+        android:textColor="@color/white"
+        android:layout_below="@+id/advice_text"
+
+        android:textSize="16sp"
+        app:neumorph_backgroundColor="@color/red_2"
+
+        app:neumorph_shadowColorDark="@color/orange_2"
+        app:neumorph_shadowColorLight="@color/red_2"
+        app:neumorph_shadowElevation="4dp"
+
+        app:neumorph_shapeType="flat" />
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/menu_sol"
+
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_detection_apr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:background="@drawable/bottom_menu_background"
+            android:layout_alignParentBottom="true"
+            app:fabCradleMargin="15sp"
+            android:layout_gravity="bottom"
+            app:fabCradleRoundedCornerRadius="20dp"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_detection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_menu"
+
+
+                />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_detection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/login"
+            android:src="@drawable/tomato_scan"
+
+            app:layout_anchor="@id/bottom_detection_apr" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

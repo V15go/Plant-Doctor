@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/detection_page"
+    tools:context=".agri_clg_near_me">
+
+
+
+
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back_btn"
+        android:backgroundTint="@color/white"
+        android:id="@+id/back_btn_sol"
+        app:neumorph_shadowColorLight="@color/light_stroke"
+        app:neumorph_shadowColorDark="@color/dark_stroke"
+        android:elevation="20sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_design"
+        android:background="@drawable/agri_univ_top"
+        />
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_card"
+        android:padding="10dp"
+        app:neumorph_shadowColorLight="@color/light_stroke"
+        app:neumorph_shadowColorDark="@color/dark_stroke"
+        android:elevation="20sp"
+        android:layout_below="@+id/top_design"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:startIconDrawable="@drawable/clinic_icon"
+            android:layout_marginTop="10dp"
+            android:hint="@string/select_the_city"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/select_city"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textColor="@color/text_color"
+                android:enabled="false"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/spinner_card"
+        android:layout_margin="18dp"
+        android:layout_above="@+id/menu_agri"
+        android:layout_height="wrap_content"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical"
+        >
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tnau_card"
+        android:visibility="gone"
+        app:neumorph_shadowColorLight="@color/light_stroke"
+        app:neumorph_shadowColorDark="@color/dark_stroke"
+        android:elevation="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16sp"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/acme"
+            android:text="@string/tamil_nadu_agricultural_university"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/navig_TNAU"
+            android:textSize="16sp"
+
+            android:text="@string/to_visit"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:visibility="gone"
+
+            android:id="@+id/chidambaram_card"
+            android:layout_marginTop="32dp"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/annamalai_university"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_annamali"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:id="@+id/theni_card"
+            android:visibility="gone"
+
+            android:layout_marginTop="32dp"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/college_of_agricultural_technology_theni"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_theni"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:id="@+id/Visalur_card"
+            android:visibility="gone"
+
+            android:layout_marginTop="32dp"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/agricultural_college_and_research_institute_kudumiyanmalai"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_kudumiyanmalai"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:visibility="gone"
+
+            android:layout_marginTop="32dp"
+            android:id="@+id/Vellore_card"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/adhiparasakthi_agricultural_college_apac"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_Vellore"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:id="@+id/Pollachi_card"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/vanavarayar_institute_of_agriculture_via"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_pollachi"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+
+            android:id="@+id/Thanjavur_card"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/rvs_agricultural_college"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_Thanjavur"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:visibility="gone"
+
+            android:id="@+id/Arakkonam_card"
+            android:layout_marginTop="32dp"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/don_bosco_college_of_agriculture"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_Arakkonam"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            android:layout_margin="16sp"
+            android:id="@+id/karikudi_card"
+            android:layout_marginTop="32dp"
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/sethu_bhaskara_agricultural_college_and_research_foundation"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_karikudi"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:id="@+id/not_listed_card"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/acme"
+                    android:text="@string/not_listed_click_here"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navig_not_listed"
+                    android:textSize="16sp"
+
+                    android:text="@string/to_visit"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+</LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/menu_agri"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_agri_apr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            app:fabCradleMargin="15sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_menu_background"
+
+            app:fabCradleRoundedCornerRadius="20dp"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_agri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_menu"
+
+
+                />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_agri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/login"
+            android:src="@drawable/tomato_scan"
+
+            app:layout_anchor="@id/bottom_agri_apr" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

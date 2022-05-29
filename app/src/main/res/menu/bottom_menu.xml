@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home_icon"
+
+        />
+
+    <item android:id="@+id/anchor"
+        android:title=""
+        />
+
+
+    <item android:id="@+id/clinic_near"
+        android:title="@string/clinic_s"
+
+        android:icon="@drawable/clinic_icon"
+        />
+
+
+</menu>

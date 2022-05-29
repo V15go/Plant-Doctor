@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect11"
+        android:backgroundTint="@color/color_change"
+
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/transparent"
+           android:layout_margin="15sp"
+
+           android:orientation="horizontal"
+         >
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_weight="0"
+               android:src="@mipmap/ic_launcher_round"
+               android:id="@+id/profile_navigator"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginStart="80sp"
+               android:fontFamily="@font/grand_hotel"
+               android:text="@string/safe_tomatoes"
+               android:textSize="24sp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:background="@drawable/pop_up_menu"
+               android:layout_marginStart="100sp"
+               android:layout_gravity="center_vertical"
+               />
+
+
+
+
+
+
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:textSize="24sp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+
+            android:elevation="10dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/home_vector"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abt_tomato"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ScrollViewCount">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="18dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/text_color"
+            android:layout_height="wrap_content"
+            android:text="@string/abt_tomatoes"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/acme"
+            android:layout_margin="18dp"
+
+            android:text="@string/nutrition_facts"
+            android:textColor="@color/orange_1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="18dp"
+
+            android:layout_marginEnd="18dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/text_color"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrients"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="18dp"
+
+            android:layout_marginEnd="18dp"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/text_color"
+            android:layout_height="wrap_content"
+            android:text="@string/tom"
+            />
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_home_apr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            app:fabCradleMargin="15sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_menu_background"
+
+            app:fabCradleRoundedCornerRadius="20dp"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_menu"
+
+
+                />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/login"
+            android:src="@drawable/tomato_scan"
+
+            app:layout_anchor="@id/bottom_home_apr" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+

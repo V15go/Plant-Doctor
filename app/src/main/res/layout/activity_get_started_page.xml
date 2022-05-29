@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/getstarted"
+    tools:context=".get_started_page">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/allan"
+
+        android:text="@string/welcome"
+        android:textColor="@color/text_color"
+        android:textSize="34sp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/login_page_navi"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:onClick="login_navi"
+        android:layout_gravity="center"
+
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:layout_below="@id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        app:neumorph_backgroundColor="@color/red_2"
+
+        app:neumorph_shadowColorDark="@color/orange_2"
+        app:neumorph_shadowColorLight="@color/red_2"
+        app:neumorph_shadowElevation="4dp"
+
+        app:neumorph_shapeType="flat" />
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/signup_page_navi"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+
+        android:text="@string/sign_up"
+        android:onClick="sign_up_page_navi"
+        android:textColor="@color/red_2"
+        android:layout_below="@id/login_page_navi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        app:neumorph_backgroundColor="@color/white"
+
+        app:neumorph_shadowColorDark="@color/orange_2"
+        app:neumorph_shadowColorLight="@color/red_2"
+        app:neumorph_shadowElevation="4dp"
+
+        app:neumorph_shapeType="flat" />
+
+
+
+</RelativeLayout>

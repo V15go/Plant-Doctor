@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_design"
+    tools:context=".Login_page">
+
+    <soup.neumorphism.NeumorphImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back_btn"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:onClick="back_to_getstarted"
+        android:id="@+id/back_btn_login"
+        app:neumorph_shadowColorLight="@color/light_stroke"
+        app:neumorph_shadowColorDark="@color/dark_stroke"
+        android:elevation="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn_login"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/grand_hotel"
+        android:text="@string/login"
+        android:textSize="60sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_below="@id/login_text"
+        android:orientation="vertical"
+        >
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_shadowElevation="4dp"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+
+            >
+            <EditText
+
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/email"
+                android:background="@color/transparent"
+
+                android:drawablePadding="12dp"
+                android:ems="10"
+
+                android:hint="@string/email_address"
+
+                android:inputType="textEmailAddress"
+                android:lines="10"
+                android:padding="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_shadowElevation="4dp"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shadowColorLight="@color/light_stroke"
+            app:neumorph_shadowColorDark="@color/dark_stroke"
+
+            >
+            <EditText
+
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/key_icn"
+                android:background="@color/transparent"
+
+                android:drawablePadding="12dp"
+                android:ems="10"
+
+                android:hint="@string/password"
+
+                android:inputType="textPassword"
+                android:lines="10"
+                android:padding="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/login_btn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:neumorph_backgroundColor="@color/red_2"
+
+            app:neumorph_shadowColorDark="@color/orange_2"
+            app:neumorph_shadowColorLight="@color/red_2"
+            app:neumorph_shadowElevation="4dp"
+
+            app:neumorph_shapeType="flat" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

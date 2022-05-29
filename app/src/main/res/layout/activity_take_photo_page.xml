@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".take_photo_page">
+
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back_btn"
+        android:onClick="back_to_home"
+        android:backgroundTint="@color/white"
+        android:id="@+id/back_btn_sol"
+        app:neumorph_shadowColorLight="@color/light_stroke"
+        app:neumorph_shadowColorDark="@color/dark_stroke"
+        android:elevation="20sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_design"
+        android:background="@drawable/solution_top"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_design"
+        android:layout_margin="18dp"
+        android:layout_above="@+id/menu_sol"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_tomato_monica"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tomato_mocis"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/tomato_mosaic_virus"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tomato_mosaic_layout"
+                        android:orientation="vertical"
+                        >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14sp"
+                        android:id="@+id/tomato_mosaic_appear"
+                        android:fontFamily="@font/acme"
+
+                        android:text="@string/appearance"
+                        android:textColor="#EF6C00"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+
+
+                        android:id="@+id/tomato_mosaic_appear_text"
+                        android:text="@string/tomata_mosaic_ide"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14sp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/acme"
+
+
+                        android:id="@+id/tomato_mosaic_sol"
+                        android:text="@string/solution"
+                        android:textColor="#EF6C00"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+
+
+                        android:id="@+id/tomato_mosaic_sol_text"
+                        android:text="@string/tomato_mosaic_sol"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tomato_mosaic_sol_btn"
+
+
+                        android:layout_margin="20sp"
+                        android:text="@string/know_more"
+                        />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_target_spot"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/target_spot"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/target_spot"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/target_spot_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/target_spot_text"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/target_spot_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_bacterial"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bact_spot"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/bacterial_spot"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bacterial_spot_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/bact_val"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/bacterial_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_tylc"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tlcv_pic"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/tylc_h"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tylc_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/tylc_text"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/tylc_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_late_blight"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/late_blight_pic"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/late_blight"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/late_blight_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/late_bligt_txt"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/late_blight_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_early_blight"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/early_blight"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/early_blight"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/early_blight_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/early_text"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/early_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_spectoria"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/septoria_leaf_spot_tomato"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/septoria_leaf_spot"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/septoria_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/spectoria_txt"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/spectoria_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="expand_leaf_mold"
+
+                app:neumorph_shadowColorLight="@color/light_stroke"
+                app:neumorph_shadowColorDark="@color/dark_stroke"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/leaf_mold"
+                    android:contentDescription="@string/gcm_defaultSenderId" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="138dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="@string/leaf_mold"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/leaf_mold_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        tools:ignore="TooManyViews">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+
+                            android:fontFamily="@font/acme"
+
+                            android:text="@string/appearance"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/leaf_mold_text"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26sp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/acme"
+
+
+
+                            android:text="@string/solution"
+                            android:textColor="#EF6C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+
+
+
+                            android:text="@string/leaf_mold_sol"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:layout_margin="20sp"
+                            android:text="@string/know_more"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/menu_sol"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_solution_apr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            app:fabCradleMargin="15sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_menu_background"
+
+            app:fabCradleRoundedCornerRadius="20dp"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_menu"
+
+
+                />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/login"
+            android:src="@drawable/tomato_scan"
+
+            app:layout_anchor="@id/bottom_solution_apr" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
