@@ -3,16 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## 🍅 Description 
 Tomato disease detection can be done using various machine- learning classifiers and various techniques have been used in the past for this purpose. In this paper, the classifier or the dataset that is required for training was Convolution Neural Network (CNN). In this, we have identified 10 common and need to concerned plant diseases and trained using 200 – 300 photo samples of the affected area. Using the dataset collected, the creation of the data model with a well-labelled machine learning model is prepared using the online software called Teachable machine which provides the code snippet and the ML model in an easier way. 
 
@@ -21,43 +11,6 @@ Tomato disease detection can be done using various machine- learning classifiers
 ## Used By 👨‍🌾
 
 The Plant doctor is an android application using which the stakeholders can get to know the disease in the plant with just a snap of the plant. They get to know the chemical and manual remedies. The users are provided with the nearby agricultural clinics.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
-
-
-
-
-
-
 
 
 
