@@ -22,6 +22,14 @@ The Plant doctor is an android application using which the stakeholders can get 
 
 💡 Nearby agricultural clinics
 
+💡 Dark/ Light mode toogle
+
+💡 Login & sign up Auth 
+
+## Tech stack
+- Java, Python, XML, Firebase(Firebase auth, Cloud Firebase, Tensorflow functions) 
+
+
 
 ## Screenshots
 
